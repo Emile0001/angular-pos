@@ -1,0 +1,15 @@
+<mat-toolbar class="mat-elevation-z3">
+  <button mat-icon-button aria-label="Example icon-button with menu icon">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>Cutting Edge</span>
+  <div class="theme-control">
+    <button mat-icon-button (click)="toggleTheme()">
+      @if (themeService.themeSignal() === 'dark-theme'){
+      <mat-icon>bedtime</mat-icon>
+      } @else {
+      <mat-icon>brightness_5</mat-icon>
+      }
+    </button>
+  </div>
+</mat-toolbar>
