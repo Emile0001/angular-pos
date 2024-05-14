@@ -7,12 +7,7 @@
     <mat-icon>menu</mat-icon>
   </button>
   <span>Cutting Edge</span>
-
-  <button mat-icon-button (click)="toggleTheme()">
-    @if (themeService.themeSignal() === 'dark-theme'){
-    <mat-icon>bedtime</mat-icon>
-    } @else {
-    <mat-icon>brightness_5</mat-icon>
-    }
-  </button>
+  <app-notifications></app-notifications>
+  <app-search></app-search>
+  <app-theme-toggle></app-theme-toggle>
 </mat-toolbar>

@@ -1,0 +1,9 @@
+<div class="select-theme">
+  <button mat-icon-button (click)="toggleTheme()">
+    @if (themeService.themeSignal() === 'dark-theme'){
+    <mat-icon>brightness_5</mat-icon>
+    } @else {
+    <mat-icon>bedtime</mat-icon>
+    }
+  </button>
+</div>
